@@ -1,9 +1,10 @@
 # Why is "const" in function return type, which is fundamental type, ignored?
 
-- [**Because "const" applies to lvalue expressions only**.](https://en.cppreference.com/w/c/language/const.html) Function return type, which is a fundamental type, is non-reference function return type, and **non-reference function return type is prvalue**.
+- Because "const" applies to lvalue expressions only.
 
 >[_"const semantics apply to lvalue expressions only"_](https://en.cppreference.com/w/c/language/const.html)
 
+- Function return type, which is a fundamental type, is non-reference function return type, and non-reference function return type is prvalue.
 
 >_The following expressions are **prvalue** expressions:_
 >
